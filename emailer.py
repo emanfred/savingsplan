@@ -1,15 +1,15 @@
 import datetime as dt
 import smtplib    
 
-MY_EMAIL = "corndogg821@yahoo.com"
-MY_PASSWORD = "vaderT!m3vaderT!m"
+MY_EMAIL = "edoggydogg@yahoo.com"
+MY_PASSWORD = "vaderT!m3vaderT!m3"
 x = "hELLO"
 y = "Test"
 
 def email(x, y):    
     now = dt.datetime.now()
     weekday = now.weekday()
-    if weekday == 0 or weekday == 2:
+    if weekday == 0 or weekday == 4:
         print(f"emailing {y} data")
         with smtplib.SMTP("smtp.mail.yahoo.com", 587) as connection:
             connection.starttls()
